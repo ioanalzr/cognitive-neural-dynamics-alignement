@@ -1,0 +1,286 @@
+Functions in params.py:
+  set_rc_params
+  add_panel_caption
+Functions in __init__.py:
+Functions in setup.py:
+Functions in tools/utilityTools.py:
+  phantom_axes
+  get_colors
+  find_file
+  shaded_errorbar
+  plot_targets
+  add_gridspec_abs
+  report
+  inner
+Functions in tools/__init__.py:
+Functions in tools/rasterTools.py:
+  plot_fr_raster
+  plot_pos_ex
+Functions in tools/dataTools.py:
+  summary
+  load_pyal_data
+  get_data_array
+  add_history
+  add_history_to_data_array
+  get_signif_annot
+  _get_data_array
+  get_data_array_and_pos
+  get_full_monkey_data
+  get_example_monkey_data
+  get_full_mouse_data
+  get_example_mouse_data
+  get_full_random_walk_data
+  get_paired_dfs
+  get_paired_files_monkey
+  get_paired_files_mouse
+  load_pickle
+  normal_mov
+Functions in tools/lstm.py:
+  custom_r2_func
+  custom_r2_vaf
+  __init__
+  forward
+  __init__
+  fit
+  predict
+Functions in tools/corrTools.py:
+  del_nan
+  trim_within_mouse_corr
+  trim_across_mouse_corr
+  trim_within_monkey_corr
+  trim_across_monkey_corr
+  plot_cca_corr
+Functions in tools/simTools.py:
+  get_data
+  get_outdir
+  get_colormap
+  graph_sim_position
+  graph_position
+  get_mse
+  model_to_pyaldata
+  get_processed_pyaldata
+  get_cc_across
+  get_cc_across_groups
+  trim_across_groups_rnn_corr
+  trim_across_rnn_corr
+  get_weights
+  get_weight_changes
+Functions in tools/decodeTools.py:
+  monkey_target_decoding
+  within_animal_decoding
+  across_animal_decoding
+  mouse_decoding
+  monkey_decoding
+  plot_decoding
+Functions in tools/ccaTools.py:
+  get_ccs
+  get_ccs_upper_bound
+  get_ccs_lower_bound_monkey
+  get_ccs_lower_bound_mice
+  plot_cca
+  plot_cca_for_ex
+  canoncorr
+  canoncorr_torch
+  procrustes_wrapper
+  get_target_id
+  VAF_pc_cc
+  VAF_pyal
+  VAF_pc_cc_pyal
+  VAF_pc_cc_pyal2
+Functions in mouse/defs.py:
+  prep_general_mouse
+  prep_pull_mouse
+Functions in random_walk/defs.py:
+  prep_general
+  get_reaches_df
+  set_target_groups
+  get_matched_reaches_idx
+  get_paired_data_arrays
+  _get_data_array
+Functions in packages/config_manager/setup.py:
+Functions in packages/config_manager/config_manager/__init__.py:
+Functions in packages/config_manager/config_manager/config_field.py:
+  __init__
+  name
+  key
+  types
+  default
+  requirements
+Functions in packages/config_manager/config_manager/config_template.py:
+  __init__
+  fields
+  nested_templates
+  level
+  dependent_variables
+  dependent_variables_required_values
+  template_name
+Functions in packages/config_manager/config_manager/base_configuration.py:
+  __init__
+  _update_config
+  _read_config_from_path
+  validate_field
+  validate_field_type
+  validate_field_requirements
+  _template_is_needed
+  _check_and_set_template
+  config
+  save_configuration
+  get_property
+  _set_property
+  _set_attribute_name_types_map
+  _set_attribute_name_requirements_map
+  _set_attribute_name_key_map
+  add_property
+  amend_property
+Functions in packages/config_manager/tests/test_base_configuration.py:
+  get_suite
+  test_validate_field
+Functions in packages/config_manager/tests/constants.py:
+Functions in packages/config_manager/tests/__init__.py:
+Functions in packages/config_manager/tests/test_integration.py:
+  get_suite
+  _test_integration_example
+  test_integration_examples
+Functions in packages/config_manager/tests/test_templates/test_template_1.py:
+Functions in packages/pyaldata/setup.py:
+Functions in packages/pyaldata/pyaldata/df_utils.py:
+  concat_TDs
+  rename_fields
+  copy_fields
+Functions in packages/pyaldata/pyaldata/firing_rates.py:
+  add_firing_rates
+  get_average_firing_rates
+  remove_low_firing_neurons
+  get_rate
+  get_rate
+Functions in packages/pyaldata/pyaldata/dim_reduction.py:
+  fit_dim_reduce_model
+  apply_dim_reduce_model
+  dim_reduce
+Functions in packages/pyaldata/pyaldata/regression.py:
+  fit_regressor_model
+  apply_regressor_model
+  regress
+  expand_field_in_time
+Functions in packages/pyaldata/pyaldata/interval.py:
+  restrict_to_interval
+  slice_around_index
+  slice_around_point
+  slice_between_points
+  generate_epoch_fun
+  extract_interval_from_signal
+  _slice_in_trial
+  _adjust_field
+Functions in packages/pyaldata/pyaldata/array_utils.py:
+  split_array
+Functions in packages/pyaldata/pyaldata/tools.py:
+  add_gradient
+  combine_time_bins
+  merge_signals
+  add_norm
+  trial_average
+  subtract_cross_condition_mean
+  select_trials
+  keep_common_trials
+  rebin_array
+Functions in packages/pyaldata/pyaldata/io.py:
+  mat2dataframe
+Functions in packages/pyaldata/pyaldata/__init__.py:
+Functions in packages/pyaldata/pyaldata/data_cleaning.py:
+  backshift_idx_fields
+  clean_0d_array_fields
+  clean_integer_fields
+Functions in packages/pyaldata/pyaldata/integrity_checks.py:
+  trials_are_same_length
+  all_integer
+Functions in packages/pyaldata/pyaldata/signal_transformations.py:
+  get_range
+  center
+  center_signal
+  z_score
+  z_score_signal
+  sqrt_transform_signal
+  zero_normalize_signal
+  center_normalize_signal
+  soft_normalize_signal
+  transform_signal
+Functions in packages/pyaldata/pyaldata/utils.py:
+  copy_td
+  remove_suffix
+  get_time_varying_fields
+  get_array_fields
+  get_string_fields
+  get_trial_length
+  wrapper
+Functions in packages/pyaldata/pyaldata/cmp.py:
+  remove_cmp_formatting
+  read_cmp
+Functions in packages/pyaldata/pyaldata/smoothing.py:
+  norm_gauss_window
+  hw_to_std
+  smooth_data
+  only_one_is_not_None
+  smooth_signals
+Functions in packages/pyaldata/pyaldata/movement_onset_and_peak.py:
+  get_onset_idx
+  get_movement_onset
+  add_movement_onset
+  get_peak_speed_idx
+  add_peak_speed_idx
+  get_peak_speed
+  add_peak_speed
+Functions in packages/pyaldata/pyaldata/extract_signals.py:
+  concat_trials
+  reverse_concat
+  get_signals
+  get_sig_by_trial
+  stack_time_average
+Functions in monkey/defs.py:
+  get_target_id
+  prep_general
+Functions in rnn/defs.py:
+Functions in rnn/save_pca.py:
+Functions in rnn/__init__.py:
+Functions in rnn/test.py:
+  test_model
+Functions in rnn/simulation/runner.py:
+  __init__
+  _setup
+  _create_model
+  run_train
+  _create_and_initialize_weights
+  run_test
+  _setup_testdata
+  test_current_model
+  _load_model
+  _load_optimizer
+  cca_penalisation
+  train_force
+  train
+  _log
+Functions in rnn/simulation/task_data.py:
+  __init__
+  __init__
+  __len__
+  __getitem__
+  get_stimulus
+  get_go_onset
+  get_target
+  get_stimulus_target
+Functions in rnn/simulation/__init__.py:
+Functions in rnn/simulation/config_template.py:
+Functions in rnn/simulation/networks.py:
+  __init__
+  save_parameters
+  init_hidden
+  forward
+  f_step
+  force_training
+Functions in rnn/simulation/run_pipeline.py:
+  get_args
+  set_random_seed
+  set_outdir
+  set_datadir
+  set_sim_metadata
+  get_config
+  run
